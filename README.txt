@@ -3,8 +3,26 @@ A Java implementation of the Tetris game I made as a Java lecture for the highsc
 It has simplified rules (for now): pieces are moved by user and they're not falling to the ground as in real tetris.
 Pieces are randomly generated, dimension of the field is up to the user. 
 The program will be completed with the possibility to save the match on a text file and then restart from it.
-It has an ascii art interface.
-
+It has an ascii art interface:
+  ┌──────────────────────────┐  
+ *│┌────────────────────────┐│* 	Player		dmn
+ *││    D4MN T E T R I S    ││* 
+ *│├────────────────────────┤│* 	Score		0
+ *││ . .██ . . . . . . . . .││* 
+ *││ .████ . . . . . . . . .││* 	Blocks		0
+ *││ .██ . . . . . . . . . .││* 
+ *││ . . . . . . . . . . . .││* 			 . .██
+ *││ . . . . . . . . . . . .││* 	Next		 . .██
+ *││ . . . . . . . . . . . .││* 			 . .██
+ *││ . . . . . . . . . . . .││* 
+ *││ . . . . . . . . . . . .││* 	
+ *││ . . . . . . . . . . . .││* 
+ *││ . . . . . . . . . . . .││* 
+ *││ . . . . . . . . . . . .││* 
+ *││ . . . . . . . . . . . .││* 
+──┴┴────────────────────────┴┴──
+////////////////////////////////
+Fai la tua mossa: ← (a), ↑ (w), ↓ (s), → (d), ↺ (k), ↻ (l), ferma (o), esci (X). 
 
 The aim of the excercise, is to:
  - understand differences between global/local variables

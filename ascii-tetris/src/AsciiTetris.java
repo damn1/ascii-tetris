@@ -613,37 +613,37 @@ public class AsciiTetris {
             System.out.print("──");
         }
         System.out.println("─┐  ");
-        System.out.print(" ◢│┌");
+        System.out.print(" *│┌");
         for (int c = 0; c < campo[0].length; c++) {
             System.out.print("──");
         }
-        System.out.print("┐│◣ ");
+        System.out.print("┐│* ");
         System.out.println("\tPlayer\t\t" + nome);
 
-        System.out.print(" ◢││");
+        System.out.print(" *││");
         for (int c = 0; c < campo[0].length; c++) {
             System.out.print(c == campo[0].length / 2 - 4 ? "D4MN T E T R I S" : "  ");
             if (c == campo[0].length / 2 - 4) {
                 c += 7;
             }
         }
-        System.out.println("││◣ ");
+        System.out.println("││* "); //◣◢ al posto degli asterischi
 
-        System.out.print(" ◢│├");
+        System.out.print(" *│├");
         for (int c = 0; c < campo[0].length; c++) {
             System.out.print("──");
         }
-        System.out.print("┤│◣ ");
+        System.out.print("┤│* ");
         System.out.println("\tScore\t\t" + punti);
 
         boolean printingNext = false;
         int counterRowNext = 0;
         for (int r = 0; r < campo.length; r++) { //CIAO DAMI
-            System.out.print(" ◢││");
+            System.out.print(" *││");
             for (int c = 0; c < campo[r].length; c++) {
                 System.out.print(campo[r][c] ? "██" : " .");
             }
-            System.out.print("││◣ ");
+            System.out.print("││* ");
             if (r == 3) {
                 printingNext = true;
             }
